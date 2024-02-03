@@ -1,5 +1,7 @@
- //Desafio fiqOn de Consumo de API feito em Javascript 
-// Arquivo foi verificado e testado usando Node.js
+// Desafio fiqOn de Consumo de API feito em Javascript.
+// Como solicitado no desafio, existem 3 etapas que precisam ser executadas em sequencia. Uma dependente da outra, que no final ira retornar uma resposta se o teste foi bem-sucedido ou não. 
+// Ao longo do codigo, existem alguns comentarios separando as etapas e cada função da mesma. Dito isso, essa é a terceira versão do codigo onde foi refatorado para alterar algumas coisas e ficar com boas práticas. 
+// o teste foi feito em javascript e usado o node.js para execução do arquivo. 
 
 
  //Primeira etapa - Requisição de token da API
@@ -90,7 +92,7 @@ async function etapaTres(token,pilares){
         }
         return response.json();
     }).then((response)=>{
-        console.log('=======Resposta da requisição de Etapa 03=======')
+        console.log('=======Resposta da requisição da Etapa 03=======')
         console.log(response['message'])
     })
 }
